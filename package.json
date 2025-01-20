@@ -1,0 +1,67 @@
+{
+  "name": "@activetheory/balance-text",
+  "version": "1.0.0",
+  "description": "Simple text balancing utility",
+  "main": "./src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "default": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "dev": "vite demo",
+    "format": "prettier --write --ignore-unknown",
+    "release": "release-it",
+    "prepare": "husky"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "author": {
+    "name": "Active Theory",
+    "email": "hello@activetheory.net",
+    "url": "https://activetheory.net"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/activetheory/balance-text.git"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css",
+    "printWidth": 200,
+    "quoteProps": "as-needed",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.1",
+    "prettier": "^3.4.2",
+    "release-it": "^18.1.1",
+    "vite": "^6.0.9"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "npm run format"
+    ]
+  }
+}

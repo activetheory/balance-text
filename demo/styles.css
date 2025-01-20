@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#test1 {
+  --ratio: 50;
+  width: calc(var(--ratio) * 1%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  article {
+    flex: 1 1;
+  }
+
+  #balance-text {
+    display: inline-block;
+  }
+}

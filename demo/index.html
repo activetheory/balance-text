@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <div id="test1">
+        <h1>Balance Text</h1>
+        <input id="input-width" type="range" name="ratio" id="ratio" min="0" max="1" step="0.01" value="1" />
+        <input id="input-toggle-text-wrap" type="checkbox" name="text-wrap" />
+        <div class="row">
+          <article>
+            <h2>
+              <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. </span>
+            </h2>
+          </article>
+          <article>
+            <h2>
+              <span id="balance-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. </span>
+            </h2>
+          </article>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
