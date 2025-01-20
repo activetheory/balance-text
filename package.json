@@ -1,6 +1,6 @@
 {
   "name": "@activetheory/balance-text",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple text balancing utility",
   "main": "./src/index.js",
   "publishConfig": {
