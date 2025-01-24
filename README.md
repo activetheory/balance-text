@@ -3,6 +3,8 @@
 Simple text balancing utility. It's a wrapper around the `text-wrap: balance` CSS property.
 If the browser supports the `text-wrap: balance` property, and the element has the `text-wrap: balance` property set, it will not be balanced.
 
+[Demo](https://activetheory.github.io/balance-text/)
+
 ## Installation
 
 ```bash
